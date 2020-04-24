@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++Algorithms", "C++Algorithms\C++Algorithms.vcxproj", "{2D701DA5-A1A8-4E2B-85C9-F0431B348056}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Debug|x64.ActiveCfg = Debug|x64
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Debug|x64.Build.0 = Debug|x64
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Debug|x86.ActiveCfg = Debug|Win32
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Debug|x86.Build.0 = Debug|Win32
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Release|x64.ActiveCfg = Release|x64
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Release|x64.Build.0 = Release|x64
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Release|x86.ActiveCfg = Release|Win32
+		{2D701DA5-A1A8-4E2B-85C9-F0431B348056}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0AE0E21-0356-4D31-97E9-DAD163A87591}
+	EndGlobalSection
+EndGlobal
