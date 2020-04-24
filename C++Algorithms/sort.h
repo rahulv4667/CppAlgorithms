@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<vector>
+#include<map>
 
 
 template<typename T>
@@ -11,6 +12,8 @@ void print(std::vector<T>& vec) {
 	}
 	std::cout << std::endl;
 }
+
+
 
 ////////////////////////
 ///////// SWAP /////////
@@ -29,7 +32,7 @@ void swap(T& a, T& b) {
 ////////////////////////
 
 template<typename T>
-void insertionSort(std::vector<T>& vec) {
+void insertion_sort(std::vector<T>& vec) {
 
 	for (int i = 1; i < vec.size(); i++) {
 		T temp = vec[i];
@@ -97,7 +100,7 @@ void mSort(std::vector<T>& vec, int beg, int end) {
 
 
 template<typename T>
-void mergeSort(std::vector<T>& vec) {
+void merge_sort(std::vector<T>& vec) {
 	mSort(vec, 0, vec.size() - 1);
 }
 
@@ -111,7 +114,7 @@ void mergeSort(std::vector<T>& vec) {
 ///////////////////////////
 
 template<typename T>
-void bubbleSort(std::vector<T>& vec) {
+void bubble_sort(std::vector<T>& vec) {
 	int lastUnsorted = vec.size()-1;
 	bool swapped;
 	do {
@@ -169,7 +172,7 @@ void qSort(std::vector<T>& vec, int beg, int end) {
 }
 
 template<typename T>
-void quickSort(std::vector<T>& vec) {
+void quick_sort(std::vector<T>& vec) {
 	qSort(vec, 0, vec.size() - 1);
 }
 
@@ -180,7 +183,7 @@ void quickSort(std::vector<T>& vec) {
 ////////////////////////////////////
 ////////////////////////////////////
 template<typename T>
-void selectionSort(std::vector<T>& vec) {
+void selection_sort(std::vector<T>& vec) {
 	int minIndex;
 	for (int i = 0; i < vec.size(); i++) {
 		minIndex = i;
@@ -191,6 +194,59 @@ void selectionSort(std::vector<T>& vec) {
 		swap(vec[i], vec[minIndex]);
 	}
 
+}
+
+
+/////////////////////////////////////////
+/////////////////////////////////////////
+////////////// HEAP SORT ////////////////
+/////////////////////////////////////////
+/////////////////////////////////////////
+template<typename T>
+void max_heapify(std::vector<T>& vec) {
+
+}
+
+template<typename T>
+void heap_sort(std::vector<T>& vec) {
+
+}
+
+
+
+////////////////////////////////////////
+////////////////////////////////////////
+////////////// RADIX SORT //////////////
+////////////////////////////////////////
+////////////////////////////////////////
+
+void radix_sort(std::vector<int>& vec) {
+	//TODO
+}
+
+
+////////////////////////////////////////
+////////////////////////////////////////
+//////////// COUNT SORT ////////////////
+////////////////////////////////////////
+////////////////////////////////////////
+
+void count_sort(std::vector<int>& vec) {
+	int max=vec[0];
+	for (int i = 1; i < vec.size(); i++) {
+		if (max < vec[i]) max = vec[i];
+	}
+	std::vector<int> cnt(max+1, 0);
+	for (int i = 0; i < vec.size(); i++) {
+		cnt[vec[i]]++;
+	}
+	int j = 0;
+	for (int i = 0; i < cnt.size(); i++) {
+		while (cnt[i]--) {
+			vec[j] = i;
+			j++;
+		}
+	}
 }
 
 
